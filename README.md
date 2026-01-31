@@ -117,5 +117,10 @@ Use the **Product** dropdown in the sidebar to scope retrieval and reduce cross-
 
 - `faiss_index/` is intentionally **not committed** (see `.gitignore`) because it’s a large generated artifact.
 - If Ollama crashes during ingestion (EOF/500), restart Ollama and re-run the same ingestion command. The manifest prevents reprocessing the same URLs.
+- The repo ships the pipeline, not the generated index/state.
+When readers run ingestion, it creates:
+`faiss_index/index.faiss,
+faiss_index/index.pkl,
+faiss_index/manifest.json (checkpoint)`
 
 
