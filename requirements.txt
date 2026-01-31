@@ -1,0 +1,15 @@
+# --- Core LangChain setup ---
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+faiss-cpu
+beautifulsoup4
+requests
+lxml
+streamlit
+ollama
+
+# --- Optional: for extra integrations ---
+tqdm
+python-dotenv
